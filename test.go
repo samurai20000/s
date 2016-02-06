@@ -12,6 +12,7 @@ func setupSignalHandlers() {
 	go interuptSignal(c)
 }
 
+// test
 func interuptSignal(c <-chan os.Signal) {
 	<-c
 	os.Exit(0)
